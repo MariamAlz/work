@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work · Mariam Alzaabi</title>
+<meta name="description" content="Case studies by Mariam Alzaabi: websites, tools, automation and algorithms, from the problem to the result.">
+<link rel="canonical" href="https://work.mariamalzaabi.ae/">
+<meta property="og:title" content="Work · Mariam Alzaabi"><meta property="og:description" content="Case studies: websites, tools, automation and algorithms."><meta property="og:image" content="https://mariamalzaabi.ae/assets/og-en.jpg">
+<link rel="icon" type="image/svg+xml" href="https://mariamalzaabi.ae/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.cases { display: grid; gap: 28px; }
+.case { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 32px; padding: 28px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); }
+@media (max-width: 820px) { .case { grid-template-columns: 1fr; gap: 18px; padding: 22px; } }
+.case .meta { display: grid; gap: 10px; align-content: start; }
+.case .k { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.case h2 { font-size: 1.6rem; font-weight: 800; }
+.case .meta p { color: var(--muted); }
+.case .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.case .tags span { font-family: var(--font-mono); font-size: 0.72rem; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.case .meta a { color: var(--accent); text-decoration: none; font-family: var(--font-mono); font-size: 0.82rem; }
+.case dl { margin: 0; display: grid; gap: 16px; }
+.case dt { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.case dd { margin: 0; }
+.cta { margin-top: 44px; padding: 32px; border-radius: var(--radius); background: var(--ink); color: var(--bg); display: flex; flex-wrap: wrap; gap: 18px 28px; align-items: center; justify-content: space-between; }
+.cta h2 { font-size: var(--step-2); font-weight: 800; text-shadow: none; }
+.cta p { color: color-mix(in srgb, var(--bg) 70%, var(--ink)); margin-top: 6px; }
+.cta .acts { display: flex; flex-wrap: wrap; gap: 10px; }
+.cta a { display: inline-flex; padding: 11px 20px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+.cta a.p { background: var(--accent); color: var(--bg); }
+.cta a.s { border: 1px solid color-mix(in srgb, var(--bg) 40%, var(--ink)); color: var(--bg); }
+</style>
+</head>
+<body>
+<header class="labbar"><div class="wrap"><a class="home" href="./">Mariam's <span>Work</span></a><nav aria-label="Site"><a href="https://lab.mariamalzaabi.ae/">Lab ↗</a><a href="https://cv.mariamalzaabi.ae/">CV ↗</a><a href="https://mariamalzaabi.ae/">mariamalzaabi.ae ↗</a></nav></div></header>
+<main class="labmain"><div class="wrap">
+  <div class="sec-head"><span class="label">Case studies</span><h1 style="font-size:var(--step-4);line-height:1">From problem <em style="font-style:normal;color:var(--accent)">to working result.</em></h1>
+  <p>Websites, tools, automation and algorithms. Each case shows what was needed, what I built, and how it turned out.</p></div>
+
+  <div class="cases">
+    <article class="case">
+      <div class="meta">
+        <span class="k" style="color:var(--sat-b)">Website · 2026</span>
+        <h2>mariamalzaabi.ae</h2>
+        <p>My own bilingual portfolio, built from scratch.</p>
+        <div class="tags"><span>HTML/CSS/JS</span><span>WebGL</span><span>Arabic RTL</span><span>GitHub Actions</span></div>
+        <a href="https://mariamalzaabi.ae/">Visit the site ↗</a>
+      </div>
+      <dl>
+        <div><dt>The need</dt><dd>A personal site that works fully in English and Arabic, loads fast, and shows real engineering instead of a list of skills.</dd></div>
+        <div><dt>What I built</dt><dd>A static site with a right-to-left Arabic version generated from the same source, a WebGL globe you descend through as you scroll, a live sky of real navigation satellites that GitHub Actions refresh every day, a photo dehazing tool that runs in the browser, and an optional light mode.</dd></div>
+        <div><dt>Result</dt><dd>No framework and no server costs, hosted on GitHub Pages with a custom .ae domain and email. Accessibility checks pass with zero issues in both languages and on phones.</dd></div>
+      </dl>
+    </article>
+
+    <article class="case">
+      <div class="meta">
+        <span class="k" style="color:var(--accent)">Optimization · 2024</span>
+        <h2>Pioneers 4.0 Hackathon</h2>
+        <p>Winning entry, MoIAT and EDGE Group.</p>
+        <div class="tags"><span>Optimization</span><span>Scheduling</span><span>Dashboard</span></div>
+      </div>
+      <dl>
+        <div><dt>The need</dt><dd>Plan blending schedules that keep up with production needs, and let the team see what is happening as it happens.</dd></div>
+        <div><dt>What I built</dt><dd>With my team, an optimizer that produces blending schedules against production requirements, plus a real-time monitoring dashboard.</dd></div>
+        <div><dt>Result</dt><dd>First place at the 4th edition of the Pioneers hackathon, March 2024.</dd></div>
+      </dl>
+    </article>
+
+    <article class="case">
+      <div class="meta">
+        <span class="k" style="color:var(--sat-a)">AI + app · 2021</span>
+        <h2>SaveSmart</h2>
+        <p>Senior design project for the Khalifa University smart home.</p>
+        <div class="tags"><span>Keras LSTM</span><span>IoT</span><span>C#</span><span>Xamarin</span></div>
+        <a href="https://github.com/MariamAlz/SaveSmart-AI">Code on GitHub ↗</a>
+      </div>
+      <dl>
+        <div><dt>The need</dt><dd>Help a solar-powered home use energy when it has the most of it.</dd></div>
+        <div><dt>What I built</dt><dd>Models that forecast solar output and power use, and a mobile app that recommends when to run appliances.</dd></div>
+        <div><dt>Result</dt><dd>Part of the KU home that placed 2nd in energy efficiency at Solar Decathlon Middle East 2021.</dd></div>
+      </dl>
+    </article>
+
+    <article class="case">
+      <div class="meta">
+        <span class="k" style="color:var(--sat-c)">Automation · Algorithms</span>
+        <h2>University course scheduling</h2>
+        <p>Timetables without clashes.</p>
+        <div class="tags"><span>Python</span><span>Genetic algorithm</span><span>Ant colony</span><span>SQLite</span></div>
+        <a href="https://github.com/MariamAlz/UCSP">Code on GitHub ↗</a>
+      </div>
+      <dl>
+        <div><dt>The need</dt><dd>Assign classes, rooms and instructors so nobody is double-booked, a job that takes days by hand.</dd></div>
+        <div><dt>What I built</dt><dd>A hybrid of a genetic algorithm and ant colony optimization that searches for clash-free timetables, with the data kept in SQLite.</dd></div>
+        <div><dt>Result</dt><dd>Schedules generated automatically instead of by hand.</dd></div>
+      </dl>
+    </article>
+  </div>
+
+  <div class="cta">
+    <div><h2>Have something like this in mind?</h2><p>A website, a tool, or a task you'd like automated.</p></div>
+    <div class="acts"><a class="p" href="https://cal.com/mariam-alzaabi-jat2hu/20-min-meeting">Book a 20-min call</a><a class="s" href="mailto:mariam@mariamalzaabi.ae">mariam@mariamalzaabi.ae</a></div>
+  </div>
+</div></main>
+<footer class="labfoot"><div class="wrap mono"><span>© 2026 Mariam Alzaabi</span><span>Abu Dhabi, UAE</span><a href="https://mariamalzaabi.ae/">mariamalzaabi.ae ↗</a></div></footer>
+</body>
+</html>
